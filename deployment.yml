@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: static
+  name: fruits
+spec:
+  selector:
+    matchLabels:
+      app: fruits
+  template:
+    metadata:
+      labels:
+        app: fruits
+    spec:
+      containers:
+      - name: fruits
+        image: ports:863398262027.dkr.ecr.ap-south-1.amazonaws.com/fruits
+        ports:
+        - containerPort: 80
