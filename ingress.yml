@@ -1,8 +1,8 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  namespace: static
   name: myingress
+  namespace: static
   labels:
     name: myingress
 spec:
@@ -13,6 +13,7 @@ spec:
         path: 
         backend:
           service:
-            name: fruits
+            name: static
             port: 
               number: 80
+
