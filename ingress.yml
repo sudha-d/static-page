@@ -1,0 +1,18 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  namespace: static
+  name: myingress
+  labels:
+    name: myingress
+spec:
+  rules:
+  - host: static.sudha53.xyz
+    http:
+      paths:
+        path: 
+        backend:
+          service:
+            name: fruits
+            port: 
+              number: 80
