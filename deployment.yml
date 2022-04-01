@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: fruits
-        image: ports:863398262027.dkr.ecr.ap-south-1.amazonaws.com/fruits
+        image: 863398262027.dkr.ecr.ap-south-1.amazonaws.com/fruits:latest
         ports:
         - containerPort: 80
